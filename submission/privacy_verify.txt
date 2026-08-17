@@ -1,0 +1,7 @@
+Command:
+docker compose run --rm app python -m src.forget --user-id minh-lab17 --verify-only
+
+Output:
+Zep user absent: True
+Redis user keys remaining: 0
+Shared semantic KB remains intact because it stores domain knowledge, not user PII.
