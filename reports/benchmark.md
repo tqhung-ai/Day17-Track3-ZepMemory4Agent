@@ -5,22 +5,22 @@
 - Cases: **11**
 - Passed: **11/11**
 - Evidence hit rate: **100.0%**
-- Average retrieval latency: **1205.5 ms**
+- Average retrieval latency: **718.5 ms**
 - Average token reduction vs full source context: **14.2%**
 
 | Case | Layer | Pass | Latency ms | Retrieved tokens | Token reduction | Missing / Error |
 | --- | --- | --- | ---: | ---: | ---: | --- |
 | E01 | short_term | PASS | 0.0 | 133 | 0.0% |  |
-| E06 | semantic | PASS | 1794.6 | 148 | 67.8% |  |
-| E09 | long_term | PASS | 3240.7 | 799 | 0.0% |  |
+| E06 | semantic | PASS | 576.9 | 148 | 67.8% |  |
+| E09 | long_term | PASS | 1278.8 | 788 | 0.0% |  |
 | E10 | short_term | PASS | 0.2 | 195 | 0.0% |  |
-| E02 | long_term | PASS | 1289.5 | 1349 | 0.0% |  |
-| E03 | long_term | PASS | 1876.5 | 1355 | 0.0% |  |
-| E04 | episodic | PASS | 217.6 | 284 | 0.0% |  |
-| E05 | episodic | PASS | 245.2 | 303 | 0.0% |  |
-| E07 | mixed | PASS | 1860.9 | 485 | 14.2% |  |
-| E11 | semantic | PASS | 424.5 | 146 | 74.2% |  |
-| E08 | long_term | PASS | 2311.1 | 1321 | 0.0% |  |
+| E02 | long_term | PASS | 1237.3 | 1353 | 0.0% |  |
+| E03 | long_term | PASS | 1251.8 | 1350 | 0.0% |  |
+| E04 | episodic | PASS | 238.7 | 596 | 0.0% |  |
+| E05 | episodic | PASS | 255.3 | 586 | 0.0% |  |
+| E07 | mixed | PASS | 1592.9 | 485 | 14.2% |  |
+| E11 | semantic | PASS | 225.0 | 146 | 74.2% |  |
+| E08 | long_term | PASS | 1247.1 | 1326 | 0.0% |  |
 
 ## Evidence excerpts
 
@@ -42,23 +42,23 @@
 
 ### E02 - long_term
 
-`<USER_SUMMARY> For the personal project ORCHID-27, Python is preferred. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used.  Minh prefers Python and dislikes Java. Minh is learning async/await and confuses coroutine with Task, wanting the AI to explain these concepts using timelines.  When explaining code, use short examples. The AI will prioritize timelines when explaining coroutines and Tasks. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 04:31:45     Source: message     Content: [user] {   "user_id": "minh-lab17",   "first_name": "Minh",   "last_n`
+`<USER_SUMMARY> For the personal project ORCHID-27, Python is preferred. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used.  Minh prefers Python and dislikes Java. Minh is learning async/await and confuses coroutine with Task, wanting the AI to explain these concepts using timelines.  When explaining code, use short examples. The AI will prioritize timelines when explaining coroutines and Tasks. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 05:19:15     Source: message     Content: [user] {   "user_id": "minh-lab17",   "first_name": "Minh",   "last_n`
 
 ### E03 - long_term
 
-`<USER_SUMMARY> For the personal project ORCHID-27, Python is preferred. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used.  Minh prefers Python and dislikes Java. Minh is learning async/await and confuses coroutine with Task, wanting the AI to explain these concepts using timelines.  When explaining code, use short examples. The AI will prioritize timelines when explaining coroutines and Tasks. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-01 09:04:00     Source: message     Content: [user] {   "user_id": "minh-lab17",   "first_name": "Minh",   "last_n`
+`<USER_SUMMARY> For the personal project ORCHID-27, Python is preferred. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used.  Minh prefers Python and dislikes Java. Minh is learning async/await and confuses coroutine with Task, wanting the AI to explain these concepts using timelines.  When explaining code, use short examples. The AI will prioritize timelines when explaining coroutines and Tasks. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 05:19:04     Source: message     Content: [user] {   "user_id": "minh-lab17",   "first_name": "Minh",   "last_n`
 
 ### E04 - episodic
 
-`EPISODE: Ten du an ca nhan cua toi la ORCHID-27. Toi thich Python va khong thich Java. Khi giai thich code, hay dung vi du ngan. EPISODE: Toi dang hoc async/await va hay nham coroutine voi Task. Neu sau nay gap chu de nay, hay giai thich bang timeline. EPISODE: TODO: hoan thanh benchmark report truoc thu Sau luc 16:00. Day la open loop LAB-REPORT-1600. EPISODE: Hom nay toi debug async HTTP. Toi da thu tang timeout len 60s nhung van fail. EPISODE: Cach hieu qua la reuse aiohttp ClientSession va dat concurrency=20. Reflection: loi chinh la connection churn, khong phai timeout threshold. Ma su co ASYNC-FIX-20. EPISODE: Da ghi nhan trajectory: increase timeout khong hieu qua; ClientSession + con`
+`EPISODE: Minh dang setup lai moi truong dev cho mot buoi ngoi code mot minh cuoi tuan nay, kieu khong co ai chung nhom, chi lam project rieng cua minh cho vui thoi. Truoc khi minh chon temp EPISODE: Toi dang hoc async/await va hay nham coroutine voi Task. Neu sau nay gap chu de nay, hay giai thich bang timeline. EPISODE: TODO: hoan thanh benchmark report truoc thu Sau luc 16:00. Day la open loop LAB-REPORT-1600. EPISODE: Hom nay toi debug async HTTP. Toi da thu tang timeout len 60s nhung van fail. EPISODE: Cach hieu qua la reuse aiohttp ClientSession va dat concurrency=20. Reflection: loi chinh la connection churn, khong phai timeout threshold. Ma su co ASYNC-FIX-20. EPISODE: Da ghi nhan tra`
 
 ### E05 - episodic
 
-`EPISODE: Ten du an ca nhan cua toi la ORCHID-27. Toi thich Python va khong thich Java. Khi giai thich code, hay dung vi du ngan. EPISODE: Toi dang hoc async/await va hay nham coroutine voi Task. Neu sau nay gap chu de nay, hay giai thich bang timeline. EPISODE: TODO: hoan thanh benchmark report truoc thu Sau luc 16:00. Day la open loop LAB-REPORT-1600. EPISODE: Hom nay toi debug async HTTP. Toi da thu tang timeout len 60s nhung van fail. EPISODE: Hay kiem tra connection pool, lifecycle cua client va concurrency. EPISODE: Cach hieu qua la reuse aiohttp ClientSession va dat concurrency=20. Reflection: loi chinh la connection churn, khong phai timeout threshold. Ma su co ASYNC-FIX-20. EPISODE: `
+`EPISODE: Minh dang setup lai moi truong dev cho mot buoi ngoi code mot minh cuoi tuan nay, kieu khong co ai chung nhom, chi lam project rieng cua minh cho vui thoi. Truoc khi minh chon temp EPISODE: Ten du an ca nhan cua toi la ORCHID-27. Toi thich Python va khong thich Java. Khi giai thich code, hay dung vi du ngan. EPISODE: Hom nay toi debug async HTTP. Toi da thu tang timeout len 60s nhung van fail. EPISODE: Cach hieu qua la reuse aiohttp ClientSession va dat concurrency=20. Reflection: loi chinh la connection churn, khong phai timeout threshold. Ma su co ASYNC-FIX-20. EPISODE: Da ghi nhan trajectory: increase timeout khong hieu qua; ClientSession + concurrency=20 giai quyet connection ch`
 
 ### E07 - mixed
 
-`<LONG_TERM> <USER_SUMMARY> For the personal project ORCHID-27, Python is preferred. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used.  Minh prefers Python and dislikes Java. Minh is learning async/await and confuses coroutine with Task, wanting the AI to explain these concepts using timelines.  When explaining code, use short examples. The AI will prioritize timelines when explaining coroutines and Tasks. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-05 08:00:00     Source: message     Content: [user] {   "user_id": "minh-lab17",   "first_name": "Minh`
+`<LONG_TERM> <USER_SUMMARY> For the personal project ORCHID-27, Python is preferred. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used.  Minh prefers Python and dislikes Java. Minh is learning async/await and confuses coroutine with Task, wanting the AI to explain these concepts using timelines.  When explaining code, use short examples. The AI will prioritize timelines when explaining coroutines and Tasks. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 05:29:48     Source: message     Content: [user] {   "user_id": "minh-lab17",   "first_name": "Minh`
 
 ### E11 - semantic
 
